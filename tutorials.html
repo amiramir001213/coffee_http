@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Coffee HTTP - آرشیو مقالات، ابزارها و آموزش‌های پیشرفته دنیای دیجیتال">
+  <meta name="theme-color" content="#1E1E2F">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>آموزش‌ها | Coffee HTTP</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="css/animations.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html" style="text-decoration:none; color:inherit; display:flex; align-items:center;">
+          <img src="images/logo.png" alt="Coffee HTTP Logo" id="logo">
+          <h1>Coffee HTTP</h1>
+        </a>
+      </div>
+      <nav>
+        <div class="menu-toggle">
+          <span class="material-icons">menu</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html">خانه</a></li>
+          <li><a href="articles.html">مقالات</a></li>
+          <li><a href="tutorials.html" class="active">آموزش‌ها</a></li>
+          <li><a href="apps.html">برنامه‌ها</a></li>
+          <li><a href="index.html#about">درباره ما</a></li>
+        </ul>
+
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div id="particles-js"></div>
+    <div class="container content-over-particles">
+      <h1>آموزش‌ها</h1>
+      <p>آموزش‌های گام به گام با ویدیو و مستندات کامل</p>
+    </div>
+  </section>
+
+
+  <section class="tutorials-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="filters">
+          <span class="filter active" data-filter="all">همه</span>
+          <span class="filter" data-filter="beginner">مبتدی</span>
+          <span class="filter" data-filter="intermediate">متوسط</span>
+          <span class="filter" data-filter="advanced">پیشرفته</span>
+        </div>
+
+        <div class="search-container tutorials-search">
+          <input type="text" id="tutorials-search-input" placeholder="جستجو در آموزش‌ها...">
+          <button id="tutorials-search-button"><span class="material-icons">search</span></button>
+        </div>
+      </div>
+
+      <div class="tutorials-container" id="tutorials-container">
+        <!-- Tutorial cards will be dynamically loaded here from script.js -->
+        <div class="tutorial-card">
+          <div class="tutorial-image">
+            <img src="https://source.unsplash.com/random/600x400/?linux,ubuntu" alt="آموزش لینوکس">
+            <span class="tutorial-level beginner">مبتدی</span>
+          </div>
+          <div class="tutorial-content">
+            <h3>آموزش گام به گام نصب و راه‌اندازی لینوکس اوبونتو</h3>
+            <p>راهنمای کامل نصب و پیکربندی اوبونتو برای کاربران مبتدی تا حرفه‌ای</p>
+            <div class="tutorial-meta">
+              <span><span class="material-icons" style="font-size: 14px; margin-left: 5px;">timelapse</span>۳۰ دقیقه</span>
+              <span><span class="material-icons" style="font-size: 14px; margin-left: 5px;">calendar_today</span>۱۰ مرداد ۱۴۰۲</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tutorial-card">
+          <div class="tutorial-image">
+            <img src="https://source.unsplash.com/random/600x400/?bitcoin,cryptocurrency" alt="آموزش ارزهای دیجیتال">
+            <span class="tutorial-level intermediate">متوسط</span>
+          </div>
+          <div class="tutorial-content">
+            <h3>راهنمای کامل ورود به دنیای ارزهای دیجیتال</h3>
+            <p>همه آنچه باید درباره بیت کوین، اتریوم و سایر ارزهای دیجیتال بدانید</p>
+            <div class="tutorial-meta">
+              <span><span class="material-icons" style="font-size: 14px; margin-left: 5px;">timelapse</span>۵۰ دقیقه</span>
+              <span><span class="material-icons" style="font-size: 14px; margin-left: 5px;">calendar_today</span>۲۵ تیر ۱۴۰۲</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tutorial-card">
+          <div class="tutorial-image">
+            <img src="https://source.unsplash.com/random/600x400/?cybersecurity,hacker" alt="آموزش امنیت سایبری">
+            <span class="tutorial-level advanced">پیشرفته</span>
+          </div>
+          <div class="tutorial-content">
+            <h3>روش‌های پیشرفته امنیت سایبری برای کسب‌وکارها</h3>
+            <p>استراتژی‌های حفاظت از داده‌ها و مقابله با حملات سایبری در کسب‌وکارهای امروزی</p>
+            <div class="tutorial-meta">
+              <span><span class="material-icons" style="font-size: 14px; margin-left: 5px;">timelapse</span>۶۰ دقیقه</span>
+              <span><span class="material-icons" style="font-size: 14px; margin-left: 5px;">calendar_today</span>۵ تیر ۱۴۰۲</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pagination">
+        <button class="pagination-btn" id="prev-tutorial-page" disabled><span class="material-icons">chevron_right</span> قبلی</button>
+        <div class="page-numbers" id="tutorial-page-numbers">
+          <span class="page-number active">۱</span>
+          <span class="page-number">۲</span>
+          <span class="page-number">۳</span>
+        </div>
+        <button class="pagination-btn" id="next-tutorial-page">بعدی <span class="material-icons">chevron_left</span></button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="Coffee HTTP Logo">
+          <h3>Coffee HTTP</h3>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-section">
+            <h4>لینک‌های سریع</h4>
+            <ul>
+              <li><a href="index.html">خانه</a></li>
+              <li><a href="articles.html">مقالات</a></li>
+              <li><a href="tutorials.html">آموزش‌ها</a></li>
+              <li><a href="apps.html">برنامه‌ها</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>پشتیبانی</h4>
+            <ul>
+              <li><a href="support.html">تماس با ما</a></li>
+              <li><a href="support.html#faq">سوالات متداول</a></li>
+              <li><a href="support.html#guide">راهنمای استفاده</a></li>
+              <li><a href="support.html#contact">گزارش مشکل</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>قانونی</h4>
+            <ul>
+              <li><a href="#">حریم خصوصی</a></li>
+              <li><a href="#">شرایط استفاده</a></li>
+              <li><a href="index.html#about">درباره ما</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; ۱۴۰۴ Coffee HTTP. تمامی حقوق محفوظ است.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

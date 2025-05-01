@@ -1,0 +1,400 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Coffee HTTP - آرشیو مقالات، ابزارها و آموزش‌های پیشرفته دنیای دیجیتال">
+  <meta name="theme-color" content="#1E1E2F">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  <!-- Security Headers -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://source.unsplash.com data:; connect-src 'self';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <meta http-equiv="Referrer-Policy" content="no-referrer-when-downgrade">
+  <title>برنامه‌ها | Coffee HTTP</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="css/animations.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html" style="text-decoration:none; color:inherit; display:flex; align-items:center;">
+          <img src="images/logo.png" alt="Coffee HTTP Logo" id="logo">
+          <h1>Coffee HTTP</h1>
+        </a>
+      </div>
+      <nav>
+        <div class="menu-toggle">
+          <span class="material-icons">menu</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html">خانه</a></li>
+          <li><a href="articles.html">مقالات</a></li>
+          <li><a href="tutorials.html">آموزش‌ها</a></li>
+          <li><a href="apps.html" class="active">برنامه‌ها</a></li>
+          <li><a href="index.html#about">درباره ما</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div id="particles-js"></div>
+    <div class="container content-over-particles">
+      <h1>برنامه‌ها</h1>
+      <p>دانلود نرم‌افزارهای کاربردی برای سیستم‌عامل‌های مختلف</p>
+    </div>
+  </section>
+
+  <section class="apps-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="os-filters">
+          <span class="os-filter active" data-os="all">
+            <span class="material-icons">devices</span>
+            <span>همه</span>
+          </span>
+          <span class="os-filter" data-os="windows">
+            <span class="material-icons">desktop_windows</span>
+            <span>ویندوز</span>
+          </span>
+          <span class="os-filter" data-os="mac">
+            <span class="material-icons">laptop_mac</span>
+            <span>مک</span>
+          </span>
+          <span class="os-filter" data-os="android">
+            <span class="material-icons">smartphone</span>
+            <span>اندروید</span>
+          </span>
+          <span class="os-filter" data-os="ios">
+            <span class="material-icons">phone_iphone</span>
+            <span>آیفون</span>
+          </span>
+          <span class="os-filter" data-os="linux">
+            <span class="material-icons">computer</span>
+            <span>لینوکس</span>
+          </span>
+        </div>
+        
+        <div class="search-container apps-search">
+          <input type="text" id="apps-search-input" placeholder="جستجو در برنامه‌ها...">
+          <button id="apps-search-button"><span class="material-icons">search</span></button>
+        </div>
+      </div>
+
+      <div class="category-tabs">
+        <span class="tab active" data-category="all">همه</span>
+        <span class="tab" data-category="security">امنیت</span>
+        <span class="tab" data-category="vpn">وی‌پی‌ان</span>
+        <span class="tab" data-category="utility">ابزار</span>
+        <span class="tab" data-category="productivity">بهره‌وری</span>
+        <span class="tab" data-category="multimedia">چندرسانه‌ای</span>
+      </div>
+
+      <div class="apps-container" id="apps-container">
+        <!-- App cards will be dynamically loaded here from script.js -->
+        <div class="app-card" data-os="windows mac linux" data-category="security">
+          <div class="app-icon">
+            <span class="material-icons">security</span>
+          </div>
+          <div class="app-content">
+            <h3>نرم‌افزار مدیریت پسوردها</h3>
+            <p>اپلیکیشن امن برای ذخیره‌سازی و مدیریت رمزهای عبور</p>
+            <div class="app-meta">
+              <div class="app-platforms">
+                <span class="platform windows"><span class="material-icons">desktop_windows</span></span>
+                <span class="platform mac"><span class="material-icons">laptop_mac</span></span>
+                <span class="platform linux"><span class="material-icons">computer</span></span>
+              </div>
+              <span class="app-version">نسخه 2.1.5</span>
+            </div>
+            <a href="#" class="download-button">
+              <span class="material-icons">download</span>
+              دانلود
+            </a>
+          </div>
+        </div>
+
+        <div class="app-card" data-os="android ios" data-category="vpn">
+          <div class="app-icon">
+            <span class="material-icons">public</span>
+          </div>
+          <div class="app-content">
+            <h3>کلاینت VPN مولتی پلتفرم</h3>
+            <p>نرم‌افزار VPN با امنیت بالا برای دستگاه‌های موبایل</p>
+            <div class="app-meta">
+              <div class="app-platforms">
+                <span class="platform android"><span class="material-icons">smartphone</span></span>
+                <span class="platform ios"><span class="material-icons">phone_iphone</span></span>
+              </div>
+              <span class="app-version">نسخه 3.4.2</span>
+            </div>
+            <a href="#" class="download-button">
+              <span class="material-icons">download</span>
+              دانلود
+            </a>
+          </div>
+        </div>
+
+        <div class="app-card" data-os="windows mac" data-category="productivity">
+          <div class="app-icon">
+            <span class="material-icons">note_alt</span>
+          </div>
+          <div class="app-content">
+            <h3>یادداشت‌برداری پیشرفته</h3>
+            <p>نرم‌افزار یادداشت‌برداری با پشتیبانی از مارک‌داون و همگام‌سازی ابری</p>
+            <div class="app-meta">
+              <div class="app-platforms">
+                <span class="platform windows"><span class="material-icons">desktop_windows</span></span>
+                <span class="platform mac"><span class="material-icons">laptop_mac</span></span>
+              </div>
+              <span class="app-version">نسخه 1.8.3</span>
+            </div>
+            <a href="#" class="download-button">
+              <span class="material-icons">download</span>
+              دانلود
+            </a>
+          </div>
+        </div>
+
+        <div class="app-card" data-os="linux" data-category="utility">
+          <div class="app-icon">
+            <span class="material-icons">build</span>
+          </div>
+          <div class="app-content">
+            <h3>ابزار تست نفوذ لینوکس</h3>
+            <p>مجموعه ابزارهای تست نفوذ برای متخصصان امنیت</p>
+            <div class="app-meta">
+              <div class="app-platforms">
+                <span class="platform linux"><span class="material-icons">computer</span></span>
+              </div>
+              <span class="app-version">نسخه 4.2.1</span>
+            </div>
+            <a href="#" class="download-button">
+              <span class="material-icons">download</span>
+              دانلود
+            </a>
+          </div>
+        </div>
+
+        <div class="app-card" data-os="windows mac" data-category="multimedia">
+          <div class="app-icon">
+            <span class="material-icons">photo_camera</span>
+          </div>
+          <div class="app-content">
+            <h3>ویرایشگر تصویر حرفه‌ای</h3>
+            <p>نرم‌افزار قدرتمند ویرایش تصاویر با ابزارهای پیشرفته</p>
+            <div class="app-meta">
+              <div class="app-platforms">
+                <span class="platform windows"><span class="material-icons">desktop_windows</span></span>
+                <span class="platform mac"><span class="material-icons">laptop_mac</span></span>
+              </div>
+              <span class="app-version">نسخه 2.5.0</span>
+            </div>
+            <a href="#" class="download-button">
+              <span class="material-icons">download</span>
+              دانلود
+            </a>
+          </div>
+        </div>
+
+        <div class="app-card" data-os="android ios" data-category="security">
+          <div class="app-icon">
+            <span class="material-icons">shield</span>
+          </div>
+          <div class="app-content">
+            <h3>آنتی‌ویروس موبایل</h3>
+            <p>محافظت از دستگاه موبایل در برابر بدافزارها و تهدیدات امنیتی</p>
+            <div class="app-meta">
+              <div class="app-platforms">
+                <span class="platform android"><span class="material-icons">smartphone</span></span>
+                <span class="platform ios"><span class="material-icons">phone_iphone</span></span>
+              </div>
+              <span class="app-version">نسخه 5.3.7</span>
+            </div>
+            <a href="#" class="download-button">
+              <span class="material-icons">download</span>
+              دانلود
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pagination">
+        <button class="pagination-btn" id="prev-app-page" disabled><span class="material-icons">chevron_right</span> قبلی</button>
+        <div class="page-numbers" id="app-page-numbers">
+          <span class="page-number active">۱</span>
+          <span class="page-number">۲</span>
+          <span class="page-number">۳</span>
+        </div>
+        <button class="pagination-btn" id="next-app-page">بعدی <span class="material-icons">chevron_left</span></button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="Coffee HTTP Logo">
+          <h3>Coffee HTTP</h3>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-section">
+            <h4>لینک‌های سریع</h4>
+            <ul>
+              <li><a href="index.html">خانه</a></li>
+              <li><a href="articles.html">مقالات</a></li>
+              <li><a href="tutorials.html">آموزش‌ها</a></li>
+              <li><a href="apps.html">برنامه‌ها</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>پشتیبانی</h4>
+            <ul>
+              <li><a href="support.html">تماس با ما</a></li>
+              <li><a href="support.html#faq">سوالات متداول</a></li>
+              <li><a href="support.html#guide">راهنمای استفاده</a></li>
+              <li><a href="support.html#contact">گزارش مشکل</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>قانونی</h4>
+            <ul>
+              <li><a href="#">حریم خصوصی</a></li>
+              <li><a href="#">شرایط استفاده</a></li>
+              <li><a href="index.html#about">درباره ما</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; ۱۴۰۴ Coffee HTTP. تمامی حقوق محفوظ است.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/particles.js"></script>
+  <script type="module" src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      particlesJS('particles-js', {
+        "particles": {
+          "number": {
+            "value": 80,
+            "density": {
+              "enable": true,
+              "value_area": 800
+            }
+          },
+          "color": {
+            "value": "#5E72E4"
+          },
+          "shape": {
+            "type": "circle",
+            "stroke": {
+              "width": 0,
+              "color": "#000000"
+            },
+            "polygon": {
+              "nb_sides": 5
+            }
+          },
+          "opacity": {
+            "value": 0.5,
+            "random": false,
+            "anim": {
+              "enable": false,
+              "speed": 1,
+              "opacity_min": 0.1,
+              "sync": false
+            }
+          },
+          "size": {
+            "value": 3,
+            "random": true,
+            "anim": {
+              "enable": false,
+              "speed": 40,
+              "size_min": 0.1,
+              "sync": false
+            }
+          },
+          "line_linked": {
+            "enable": true,
+            "distance": 150,
+            "color": "#5E72E4",
+            "opacity": 0.4,
+            "width": 1
+          },
+          "move": {
+            "enable": true,
+            "speed": 2,
+            "direction": "none",
+            "random": false,
+            "straight": false,
+            "out_mode": "out",
+            "attract": {
+              "enable": false,
+              "rotateX": 600,
+              "rotateY": 1200
+            }
+          }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+            "onhover": {
+              "enable": true,
+              "mode": "grab"
+            },
+            "onclick": {
+              "enable": true,
+              "mode": "push"
+            },
+            "resize": true
+          },
+          "modes": {
+            "grab": {
+              "distance": 140,
+              "line_linked": {
+                "opacity": 1
+              }
+            },
+            "bubble": {
+              "distance": 400,
+              "size": 40,
+              "duration": 2,
+              "opacity": 8,
+              "speed": 3
+            },
+            "repulse": {
+              "distance": 200
+            },
+            "push": {
+              "particles_nb": 4
+            },
+            "remove": {
+              "particles_nb": 2
+            }
+          }
+        },
+        "retina_detect": true
+      });
+    });
+  </script>
+</body>
+</html>
